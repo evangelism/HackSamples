@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenWeatherMap", "OpenWeath
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurtleDrawings", "TurtleDrawings\TurtleDrawings.csproj", "{A0074424-6418-45CB-834D-F3F7D47F3DB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStationPi2", "WeatherStationPi2\WeatherStationPi2.csproj", "{D281DB4F-B582-425E-94CF-DD921CBCDB91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,26 @@ Global
 		{A0074424-6418-45CB-834D-F3F7D47F3DB8}.Release|x64.Build.0 = Release|Any CPU
 		{A0074424-6418-45CB-834D-F3F7D47F3DB8}.Release|x86.ActiveCfg = Release|Any CPU
 		{A0074424-6418-45CB-834D-F3F7D47F3DB8}.Release|x86.Build.0 = Release|Any CPU
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Debug|ARM.ActiveCfg = Debug|ARM
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Debug|ARM.Build.0 = Debug|ARM
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Debug|ARM.Deploy.0 = Debug|ARM
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Debug|x64.ActiveCfg = Debug|x64
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Debug|x64.Build.0 = Debug|x64
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Debug|x64.Deploy.0 = Debug|x64
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Debug|x86.ActiveCfg = Debug|x86
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Debug|x86.Build.0 = Debug|x86
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Debug|x86.Deploy.0 = Debug|x86
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Release|Any CPU.ActiveCfg = Release|x86
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Release|ARM.ActiveCfg = Release|ARM
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Release|ARM.Build.0 = Release|ARM
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Release|ARM.Deploy.0 = Release|ARM
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Release|x64.ActiveCfg = Release|x64
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Release|x64.Build.0 = Release|x64
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Release|x64.Deploy.0 = Release|x64
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Release|x86.ActiveCfg = Release|x86
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Release|x86.Build.0 = Release|x86
+		{D281DB4F-B582-425E-94CF-DD921CBCDB91}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
