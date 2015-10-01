@@ -8,9 +8,25 @@
     mc:Ignorable="d" Loaded="Page_Loaded">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image x:Name="Img" HorizontalAlignment="Center" Height="80" Width="80"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Image x:Name="Img" HorizontalAlignment="Center" Height="100" Width="100"/>
             <TextBlock x:Name="Temp" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
         </StackPanel>
+        <GridView x:Name="Fore" Grid.Row="2" HorizontalAlignment="Center">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Image Height="50" Width="50" HorizontalAlignment="Center" Source="{Binding Icon}"/>
+                        <TextBlock Text="{Binding Temp}" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{Binding Date}" FontSize="9" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
     </Grid>
 </Page>
