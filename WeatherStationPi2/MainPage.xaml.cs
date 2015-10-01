@@ -25,6 +25,7 @@ namespace WeatherStationPi2
     {
 
         BMP180 sensor = new BMP180();
+        DispatcherTimer dt = new DispatcherTimer() { Interval = new TimeSpan(1000) };
 
         public MainPage()
         {
@@ -35,7 +36,11 @@ namespace WeatherStationPi2
         {
             base.OnNavigatedTo(e);
             await sensor.Init();
-            TheTextBlock.Text = $"{sensor.Temperature.ToString()}C";
+            dt.Tick += (s,ea) =>
+            {
+                TheTextBlock.Text = $"{sensor.Temperature.ToString()}C";
+            };
+            dt.Start();
         }
 
     }

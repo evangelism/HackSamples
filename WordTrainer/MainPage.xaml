@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="WordTrainer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WordTrainer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center">
+			    <Run Text="Please choose correct picture"/>
+            </TextBlock>
+            <TextBlock x:Name="tbResult" HorizontalAlignment="Center" Text="" Style="{StaticResource SubheaderTextBlockStyle}"  Margin="10,10,10,10"/>
+        </StackPanel>
+        <TextBlock x:Name="tbWord" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Style="{StaticResource HeaderTextBlockStyle}" Text=""/>
+        <GridView x:Name="gvPics" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" SelectionChanged="gvPics_SelectionChanged">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding Pic}" Height="100" Width="100"/>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+    </Grid>
+</Page>

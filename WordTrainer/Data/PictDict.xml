@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Dict>
+  <Words>
+    <Word Name="Salad" Category="Food" Pic="Salad.png"/>
+    <Word Name="Coffee" Category="Food" Pic="Coffee.png"/>
+    <Word Name="Soup" Category="Food" Pic="Soup.png"/>
+    <Word Name="Hamburger" Category="Food" Pic="Hamburger.png"/>
+    <Word Name="Sushi" Category="Food" Pic="Sushi.png"/>
+    <Word Name="Pizza" Category="Food" Pic="Pizza.png"/>
+    <Word Name="Meat" Category="Food" Pic="Meat.png"/>
+  </Words>
+  <Categories>
+    <Category Key="*" Name="All" Pic=""/>
+    <Category Key="Food" Name="Food" Pic="Salad.png"/>
+  </Categories>
+</Dict>
