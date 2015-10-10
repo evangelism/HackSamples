@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "MySimpleWeb"
+  },
+  "hostingPlanName": {
+    "value": "MainPlan"
+  },
+  "siteLocation": {
+    "value": "North Europe"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "ad2506ca-22d5-40bc-ae97-8bfbeb0f4780"
+  },
+  "resourceGroup": {
+    "value": "Default"
+  }
+}

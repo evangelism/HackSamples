@@ -15,6 +15,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortSample", "SortSample\So
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashCardGame", "FlashCardGame\FlashCardGame.csproj", "{23AA3F8E-8D36-424E-B8EC-414643EF01B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWeb", "SimpleWeb\SimpleWeb.csproj", "{488B02EF-321C-4203-BED8-31ECA2047FAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{E072DF59-5533-416A-97A0-44D3EB7D21E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{AF137E7B-5436-4D76-B001-F965F2511FEE}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{0A60DF3F-8FD1-428D-9DB3-EE3B1C0C6D75}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\SimpleWeb.json = PublishScripts\Templates\SimpleWeb.json
+		PublishScripts\Templates\SimpleWeb.param.dev.json = PublishScripts\Templates\SimpleWeb.param.dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkXO", "NetworkXO\NetworkXO.csproj", "{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -143,8 +160,48 @@ Global
 		{23AA3F8E-8D36-424E-B8EC-414643EF01B2}.Release|x86.ActiveCfg = Release|x86
 		{23AA3F8E-8D36-424E-B8EC-414643EF01B2}.Release|x86.Build.0 = Release|x86
 		{23AA3F8E-8D36-424E-B8EC-414643EF01B2}.Release|x86.Deploy.0 = Release|x86
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Debug|ARM.Build.0 = Debug|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Debug|x64.Build.0 = Debug|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Debug|x86.Build.0 = Debug|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Release|ARM.ActiveCfg = Release|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Release|ARM.Build.0 = Release|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Release|x64.ActiveCfg = Release|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Release|x64.Build.0 = Release|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Release|x86.ActiveCfg = Release|Any CPU
+		{488B02EF-321C-4203-BED8-31ECA2047FAB}.Release|x86.Build.0 = Release|Any CPU
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Debug|ARM.ActiveCfg = Debug|ARM
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Debug|ARM.Build.0 = Debug|ARM
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Debug|ARM.Deploy.0 = Debug|ARM
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Debug|x64.ActiveCfg = Debug|x64
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Debug|x64.Build.0 = Debug|x64
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Debug|x64.Deploy.0 = Debug|x64
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Debug|x86.ActiveCfg = Debug|x86
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Debug|x86.Build.0 = Debug|x86
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Debug|x86.Deploy.0 = Debug|x86
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Release|Any CPU.ActiveCfg = Release|x86
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Release|ARM.ActiveCfg = Release|ARM
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Release|ARM.Build.0 = Release|ARM
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Release|ARM.Deploy.0 = Release|ARM
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Release|x64.ActiveCfg = Release|x64
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Release|x64.Build.0 = Release|x64
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Release|x64.Deploy.0 = Release|x64
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Release|x86.ActiveCfg = Release|x86
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Release|x86.Build.0 = Release|x86
+		{0F7CE11C-7929-493D-963E-A7BB3CDF41ED}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF137E7B-5436-4D76-B001-F965F2511FEE} = {E072DF59-5533-416A-97A0-44D3EB7D21E1}
+		{0A60DF3F-8FD1-428D-9DB3-EE3B1C0C6D75} = {E072DF59-5533-416A-97A0-44D3EB7D21E1}
 	EndGlobalSection
 EndGlobal
