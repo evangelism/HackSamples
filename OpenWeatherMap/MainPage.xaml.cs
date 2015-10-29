@@ -39,6 +39,8 @@ namespace OpenWeatherMap
     public sealed partial class MainPage : Page
     {
 
+        public string AppID = "<insert your OpenWeatherMap AppID Here>";
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -47,13 +49,13 @@ namespace OpenWeatherMap
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
             var cli = new HttpClient();
-            var res = await cli.GetStringAsync("http://api.openweathermap.org/data/2.5/weather?q=Moscow&mode=json&units=metric");
+            var res = await cli.GetStringAsync("http://api.openweathermap.org/data/2.5/weather?q=Moscow&mode=json&units=metric&APPID="+AppID);
             dynamic x = Newtonsoft.Json.JsonConvert.DeserializeObject(res);
             Temp.Text = x.main.temp.ToString();
             BitmapImage img = new BitmapImage(new Uri($"http://openweathermap.org/img/w/{x.weather[0].icon}.png"));
             Img.Source = img;
 
-            res = await cli.GetStringAsync("http://api.openweathermap.org/data/2.5/forecast/daily?q=Moscow&mode=json&units=metric&cnt=7");
+            res = await cli.GetStringAsync("http://api.openweathermap.org/data/2.5/forecast/daily?q=Moscow&mode=json&units=metric&cnt=7&APPID="+AppID);
             x = Newtonsoft.Json.JsonConvert.DeserializeObject(res);
             var Forecast = new List<WeatherRecord>();
             foreach (var z in x.list)
