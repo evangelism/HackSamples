@@ -15,9 +15,9 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom">
             <Image x:Name="Img" HorizontalAlignment="Center" Height="100" Width="100"/>
-            <TextBlock x:Name="Temp" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+            <TextBlock x:Name="Temp" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30">Loading...</TextBlock>
         </StackPanel>
-        <GridView x:Name="Fore" Grid.Row="2" HorizontalAlignment="Center">
+        <GridView x:Name="Fore" Grid.Row="2" HorizontalAlignment="Center" ItemClick="Fore_ItemClick" IsItemClickEnabled="True">
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>

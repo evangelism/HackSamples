@@ -23,7 +23,9 @@ namespace OpenWeatherMap
 
     public class WeatherRecord
     {
-        public int Temp { get; set; }
+        public double Temp { get; set; }
+        public double Pressure { get; set; }
+        public int Humidity { get; set; }
         public DateTime When { get; set; }
         public BitmapImage Icon { get; set; }
 
@@ -31,6 +33,12 @@ namespace OpenWeatherMap
         {
             get { return $"{When.Day:D2}.{When.Month:D2}"; }
         }
+        
+        public string FullDate
+        {
+            get { return When.ToString("D"); }
+        }
+
     }
 
     /// <summary>
@@ -39,7 +47,10 @@ namespace OpenWeatherMap
     public sealed partial class MainPage : Page
     {
 
-        public string AppID = "<insert your OpenWeatherMap AppID Here>";
+        public string AppID = "2de143494c0b295cca9337e1e96b00e0";
+        // public string AppID = "<insert your OpenWeatherMap AppID Here>";
+
+        public List<WeatherRecord> Forecast { get; set; } = new List<WeatherRecord>();
 
         public MainPage()
         {
@@ -57,13 +68,14 @@ namespace OpenWeatherMap
 
             res = await cli.GetStringAsync("http://api.openweathermap.org/data/2.5/forecast/daily?q=Moscow&mode=json&units=metric&cnt=7&APPID="+AppID);
             x = Newtonsoft.Json.JsonConvert.DeserializeObject(res);
-            var Forecast = new List<WeatherRecord>();
             foreach (var z in x.list)
             {
                 Forecast.Add(new WeatherRecord()
                 {
                     When = Convert((long)z.dt),
                     Temp = z.temp.day,
+                    Pressure = z.pressure,
+                    Humidity = z.humidity,
                     Icon = new BitmapImage(new Uri($"http://openweathermap.org/img/w/{z.weather[0].icon}.png"))
                 });
             }
@@ -77,6 +89,10 @@ namespace OpenWeatherMap
             return dtDateTime;
         }
 
+        private void Fore_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Frame.Navigate(typeof(WeatherDetail), e.ClickedItem);
+        }
     }
 
 }
