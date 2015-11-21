@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SexRecognizer", "SexRecogni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxfordClientLibrary", "OxfordClientLibrary\OxfordClientLibrary.csproj", "{34DAA01D-3F6B-4622-9425-726B0B4A6C78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmoRecognizer", "EmoRecognizer\EmoRecognizer.csproj", "{30112DC5-3C7D-4D64-A4BB-64ED030F4714}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -236,6 +238,26 @@ Global
 		{34DAA01D-3F6B-4622-9425-726B0B4A6C78}.Release|x64.Build.0 = Release|Any CPU
 		{34DAA01D-3F6B-4622-9425-726B0B4A6C78}.Release|x86.ActiveCfg = Release|Any CPU
 		{34DAA01D-3F6B-4622-9425-726B0B4A6C78}.Release|x86.Build.0 = Release|Any CPU
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Debug|ARM.ActiveCfg = Debug|ARM
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Debug|ARM.Build.0 = Debug|ARM
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Debug|ARM.Deploy.0 = Debug|ARM
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Debug|x64.ActiveCfg = Debug|x64
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Debug|x64.Build.0 = Debug|x64
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Debug|x64.Deploy.0 = Debug|x64
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Debug|x86.ActiveCfg = Debug|x86
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Debug|x86.Build.0 = Debug|x86
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Debug|x86.Deploy.0 = Debug|x86
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Release|Any CPU.ActiveCfg = Release|x86
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Release|ARM.ActiveCfg = Release|ARM
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Release|ARM.Build.0 = Release|ARM
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Release|ARM.Deploy.0 = Release|ARM
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Release|x64.ActiveCfg = Release|x64
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Release|x64.Build.0 = Release|x64
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Release|x64.Deploy.0 = Release|x64
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Release|x86.ActiveCfg = Release|x86
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Release|x86.Build.0 = Release|x86
+		{30112DC5-3C7D-4D64-A4BB-64ED030F4714}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

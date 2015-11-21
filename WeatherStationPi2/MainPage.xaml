@@ -8,6 +8,22 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="TheTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="42" Text="Starting..."/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="TheTextBlock" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60" Text="Starting..."/>
+        <ListBox x:Name="Graph" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>                
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Rectangle Width="15" Margin="0" Height="{Binding}" Fill="Red"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Page>

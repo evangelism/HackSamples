@@ -10,10 +10,10 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
             <Image x:Name="Img" HorizontalAlignment="Center" Height="100" Width="100"/>
             <TextBlock x:Name="Temp" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30">Loading...</TextBlock>
         </StackPanel>

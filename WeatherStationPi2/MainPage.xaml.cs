@@ -18,6 +18,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace WeatherStationPi2
 {
+
     /// <summary>
     /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
     /// </summary>
@@ -26,6 +27,9 @@ namespace WeatherStationPi2
 
         BMP180 sensor = new BMP180();
         DispatcherTimer dt = new DispatcherTimer() { Interval = new TimeSpan(1000) };
+
+        List<int> History = new List<int>();
+        int count = 0;
 
         public MainPage()
         {
@@ -38,7 +42,17 @@ namespace WeatherStationPi2
             await sensor.Init();
             dt.Tick += (s,ea) =>
             {
-                TheTextBlock.Text = $"{sensor.Temperature.ToString()}C";
+                var x = sensor.Temperature;
+                TheTextBlock.Text = $"{x.ToString()}C";
+                if (count == 0)
+                {
+                    History.Add((int)((x-23) * 40));
+                    if (History.Count > 10) History.RemoveAt(0);
+                    Graph.ItemsSource = null;
+                    Graph.ItemsSource = History;
+                    count = 5;
+                }
+                else count--;
             };
             dt.Start();
         }

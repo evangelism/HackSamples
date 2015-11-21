@@ -40,6 +40,11 @@
   <ItemGroup>
     <Compile Include="ClientError.cs" />
     <Compile Include="ClientException.cs" />
+    <Compile Include="Common\ClientError.cs" />
+    <Compile Include="Common\ClientException.cs" />
+    <Compile Include="Common\Rectangle.cs" />
+    <Compile Include="Common\ServiceError.cs" />
+    <Compile Include="Contract\Emotion.cs" />
     <Compile Include="Contract\Face.cs" />
     <Compile Include="Contract\FaceAttribute.cs" />
     <Compile Include="Contract\HeadPose.cs" />
@@ -53,10 +58,13 @@
     <Compile Include="Contract\PersonFace.cs" />
     <Compile Include="Contract\PersonGroup.cs" />
     <Compile Include="Contract\FeatureCoordinate.cs" />
+    <Compile Include="Contract\Scores.cs" />
     <Compile Include="Contract\SimilarFace.cs" />
     <Compile Include="Contract\TrainingStatus.cs" />
     <Compile Include="Contract\VerifyResult.cs" />
+    <Compile Include="EmotionServiceClient.cs" />
     <Compile Include="FaceServiceClient.cs" />
+    <Compile Include="IEmotionServiceClient.cs" />
     <Compile Include="IFaceServiceClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
